@@ -1,0 +1,78 @@
+{
+  "components": [
+    {
+      "label": "Name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1khyf4e",
+        "columns": null
+      },
+      "id": "Field_1wt0mxd",
+      "key": "textfield_w288s",
+      "description": "Your Name"
+    },
+    {
+      "label": "Car Name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0xv2rpn",
+        "columns": null
+      },
+      "id": "Field_12nut81",
+      "key": "CarName",
+      "description": "Which car are you buying",
+      "validate": {
+        "minLength": 3,
+        "maxLength": 15
+      }
+    },
+    {
+      "label": "Month you are planning to buying car",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_08ihnes",
+        "columns": null
+      },
+      "id": "Field_0y11lnr",
+      "key": "MonthOfPurchase",
+      "properties": {},
+      "validate": {
+        "minLength": 2,
+        "maxLength": 15,
+        "pattern": "January|February|April|May|June|July|August|September|October|November|December"
+      },
+      "description": "In which month you are buying car"
+    },
+    {
+      "label": "Cost of car",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_11rxrc6",
+        "columns": null
+      },
+      "id": "Field_10m6pvh",
+      "key": "CostOfCar",
+      "description": "What is the on road cost of car"
+    },
+    {
+      "label": "What is down payment",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1bw89pg",
+        "columns": null
+      },
+      "id": "Field_1yitqyy",
+      "key": "DownPaymentAmount",
+      "description": "How much down payment you can do"
+    }
+  ],
+  "type": "default",
+  "id": "ApplyForLoan",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.28.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 16
+}
