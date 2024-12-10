@@ -1,0 +1,27 @@
+{
+  "components": [
+    {
+      "label": "Want to buy Car?",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0a03bdc",
+        "columns": null
+      },
+      "id": "Field_0p3hugb",
+      "key": "BuyNewCar",
+      "description": "Do you wish to buy a new car?",
+      "validate": {
+        "pattern": "Yes|No"
+      }
+    }
+  ],
+  "type": "default",
+  "id": "WantToBuyNewCar",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.28.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 16
+}

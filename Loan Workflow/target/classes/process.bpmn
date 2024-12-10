@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_0fr9mxs" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.28.0">
+  <bpmn:process id="Car-Loan" name="Car Loan" isExecutable="true" camunda:historyTimeToLive="180">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_1jidcw6</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="Flow_1jidcw6" sourceRef="StartEvent_1" targetRef="Activity_10s2iqx" />
+    <bpmn:userTask id="Activity_10s2iqx" name="Want to buy car?" camunda:formKey="camunda-forms:/forms/WantToBuyNewCar.form">
+      <bpmn:incoming>Flow_1jidcw6</bpmn:incoming>
+      <bpmn:outgoing>Flow_1w7edkf</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="Event_1tvnech">
+      <bpmn:incoming>Flow_1w7edkf</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1w7edkf" sourceRef="Activity_10s2iqx" targetRef="Event_1tvnech" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Car-Loan">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="152" y="99" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1hkzcag_di" bpmnElement="Activity_10s2iqx">
+        <dc:Bounds x="250" y="77" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1tvnech_di" bpmnElement="Event_1tvnech">
+        <dc:Bounds x="1782" y="162" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1jidcw6_di" bpmnElement="Flow_1jidcw6">
+        <di:waypoint x="188" y="117" />
+        <di:waypoint x="250" y="117" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1w7edkf_di" bpmnElement="Flow_1w7edkf">
+        <di:waypoint x="350" y="117" />
+        <di:waypoint x="1066" y="117" />
+        <di:waypoint x="1066" y="180" />
+        <di:waypoint x="1782" y="180" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
